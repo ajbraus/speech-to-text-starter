@@ -4,7 +4,7 @@ const sr = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 
 let speechRecognition = new sr();
-speechRecognition.continuous = true;
+speechRecognition.continuous = false;
 speechRecognition.interimResults = true;
 speechRecognition.lang = document.querySelector("#select_dialect").value;
 
