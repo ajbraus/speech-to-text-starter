@@ -7,6 +7,7 @@ let speechRecognition = new sr();
 speechRecognition.continuous = false;
 speechRecognition.interimResults = true;
 speechRecognition.lang = document.querySelector("#select_dialect").value;
+speechRecognition.maxAlternatives = 10;
 
 speechRecognition.onstart = () => {
   document.querySelector("#status").style.display = "block";
